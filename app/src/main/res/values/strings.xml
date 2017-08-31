@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Task Tacker</string>
+    <string name="another_activity_msg">another_activity_msg</string>
 </resources>
