@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Task Tacker</string>
-    <string name="another_activity_msg">another_activity_msg</string>
+    <string name="create_task">Create Task</string>
+    <string name="welcome_text">Welcome to Task Tracker</string>
+    <string name="work_units">work units...</string>
+    <string name="enter_task_title">Enter task title...</string>
+    <string name="save_task">Save Task</string>
 </resources>

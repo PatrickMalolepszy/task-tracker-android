@@ -10,17 +10,16 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.welcome_text)
+    @BindView(R.id.welcome_text_view)
     TextView welcomeMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(getApplicationContext(), "hi there", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
         ButterKnife.bind(this);
     }
 
@@ -28,20 +27,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         Toast.makeText(getApplicationContext(), "Pausing main activity", Toast.LENGTH_SHORT).show();
-
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         Toast.makeText(getApplicationContext(), "Resuming main activity", Toast.LENGTH_SHORT).show();
-
     }
 
-    @OnClick(R.id.go_to_another)
+    @OnClick(R.id.create_task_button)
     public void goTo() {
-        welcomeMessage.getText();
-        Intent i = new Intent(getApplicationContext(), AnotherActivity.class);
+        Intent i = new Intent(getApplicationContext(), CreateTask.class);
         startActivity(i);
     }
 
