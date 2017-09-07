@@ -41,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    @OnClick(R.id.view_tasks_button)
+    public void viewTasks() {
+        Intent i = new Intent(getApplicationContext(), ViewTasks.class);
+        startActivity(i);
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();

@@ -5,4 +5,5 @@
     <string name="work_units">work units...</string>
     <string name="enter_task_title">Enter task title...</string>
     <string name="save_task">Save Task</string>
+    <string name="view_tasks">View Tasks</string>
 </resources>
