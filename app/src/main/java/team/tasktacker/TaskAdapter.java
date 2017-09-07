@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import models.Task;
 
@@ -17,6 +18,12 @@ import models.Task;
  */
 
 public class TaskAdapter extends ArrayAdapter<Task> {
+    @BindView(R.id.task_title_textview)
+    TextView title;
+
+    @BindView(R.id.task_work_units_taskview)
+    TextView workUnits;
+
     public TaskAdapter(Context context, ArrayList<Task> users) {
         super(context, 0, users);
     }
@@ -32,8 +39,8 @@ public class TaskAdapter extends ArrayAdapter<Task> {
         ButterKnife.bind(this, convertView);
 
         // Populate the data into the template view using the data object
-        tvName.setText(user.name);
-        tvHome.setText(user.hometown);
+        title.setText(task.taskTitle);
+        workUnits.setText(task.workUnits);
         // Return the completed view to render on screen
         return convertView;
     }
