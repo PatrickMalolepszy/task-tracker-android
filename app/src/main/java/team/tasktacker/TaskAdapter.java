@@ -37,10 +37,10 @@ public class TaskAdapter extends ArrayAdapter<Task> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.view_task_item, parent, false);
         }
         ButterKnife.bind(this, convertView);
-
+        String units = Integer.toString(task.workUnits);
         // Populate the data into the template view using the data object
         title.setText(task.taskTitle);
-        workUnits.setText(task.workUnits);
+        workUnits.setText(units);
         // Return the completed view to render on screen
         return convertView;
     }

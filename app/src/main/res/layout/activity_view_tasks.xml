@@ -8,10 +8,8 @@
 
     <ListView
         android:id="@+id/task_viewer_listView"
-        android:layout_width="0dp"
+        android:layout_width="368dp"
         android:layout_height="0dp"
         tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp"
-
-        />
+        tools:layout_editor_absoluteX="8dp" />
 </android.support.constraint.ConstraintLayout>
